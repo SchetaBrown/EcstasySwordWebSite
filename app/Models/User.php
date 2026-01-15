@@ -45,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    // Связи
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 }

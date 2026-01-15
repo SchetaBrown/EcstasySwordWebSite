@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get();
+Route::get('/', IndexController::class)->name('index'); // Главная страница
