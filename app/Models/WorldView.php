@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class WorldView extends Model
 {
     protected $fillable = [
-        'role'
+        'title'
     ];
 
     // Связи
-    public function user() {
-        return $this->hasMany(User::class);
+    public function character()
+    {
+        return $this->hasMany(Character::class);
     }
 }

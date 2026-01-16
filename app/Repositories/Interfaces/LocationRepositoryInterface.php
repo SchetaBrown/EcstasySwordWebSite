@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Interfaces;
 
-interface CharacterRepositoryInterface {
+interface LocationRepositoryInterface {
     public function all();
     public function findById(string $id);
 }

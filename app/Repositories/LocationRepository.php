@@ -3,10 +3,10 @@
 namespace App\Repositories;
 
 use App\Models\Character;
+use App\Repositories\Interfaces\LocationRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
-use App\Repositories\Interfaces\CharacterRepositoryInterface;
 
-class CharacterRepository extends BaseRepository implements CharacterRepositoryInterface
+class LocationRepository extends BaseRepository implements LocationRepositoryInterface
 {
     public function all(): Collection
     {
